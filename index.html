@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davide Tarpini</title>
+    <style>
+        .transition-fade {
+            transition: 0.4s;
+            opacity: 1;
+            }
+
+            html.is-animating .transition-fade {
+            opacity: 0;
+            }
+    </style>
 </head>
 <body>
-    <h1>Welcome, human/cat/whatever</h1>
-    <h2>Everyone knows this page is boring and awful, &#10024; thank you &#10024;</h2>
-    <h2>New content coming soon, now please get lost and don't click <a href="https://www.youtube.com/watch?v=iik25wqIuFo">this link</a></h2>
-    <hr>
-    <a href="https://sparkhand.github.io/frontend-mentor-challenges/order-summary-component/index.html">Fronted Mentor Order Summary</a>
-    <br>
-    <a href="https://sparkhand.github.io/frontend-mentor-challenges/column-preview-card-component/index.html">Fronted Mentor Column Preview Card</a>
-    <br>
-    <a href="https://sparkhand.github.io/frontend-mentor-challenges/social-proof-section/">Frontend Mentor Social Proof</a>
-    <br>
-    <a href="https://sparkhand.github.io/frontend-mentor-challenges/time-tracking-dashboard-main">Frontend Mentor Time Tracking Dashboard</a>
-    <br>
-    <a href="https://sparkhand.github.io/frontend-mentor-challenges/tip-calculator-app-main/">Fronted Mentor Tip Calculator App</a>
+    <main id="swup" class="transition-fade">
+        <h1>Welcome, human/cat/whatever</h1>
+        <h2>Everyone knows this page is boring and awful, &#10024; thank you &#10024;</h2>
+        <h2>New content coming soon, now please get lost and don't click <a href="https://www.youtube.com/watch?v=iik25wqIuFo">this link</a></h2>
+        <div class="links-list">
+
+        </div>
+    </main>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>
