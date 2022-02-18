@@ -2,11 +2,11 @@
     "links": [
         {
             "title": "Frontend Mentor - Order Summary",
-            "url": "https://sparkhand.github.io/frontend-mentor-challenges/order-summary/"
+            "url": "https://sparkhand.github.io/frontend-mentor-challenges/order-summary-component/"
         },
         {
             "title": "Frontend Mentor - Column Preview Card",
-            "url": "https://sparkhand.github.io/frontend-mentor-challenges/column-preview-card/"
+            "url": "https://sparkhand.github.io/frontend-mentor-challenges/column-preview-card-component/"
         },
         {
             "title": "Frontend Mentor - Social Proof Section",
@@ -21,8 +21,16 @@
             "url": "https://sparkhand.github.io/frontend-mentor-challenges/tip-calculator-app/"
         },
         {
+            "title": "Frontend Mentor - Profile card component",
+            "url": "https://sparkhand.github.io/frontend-mentor-challenges/profile-card-component/"
+        },
+        {
             "title": "Frontend Mentor - Sunnyside Agency Landing Page",
             "url": "https://sparkhand.github.io/frontend-mentor-challenges/sunnyside-agency-landing-page/"
+        },
+        {
+            "title": "Frontend Mentor - QR Code component",
+            "url": "https://sparkhand.github.io/frontend-mentor-challenges/qr-code-component/"
         }
     ]
 }
