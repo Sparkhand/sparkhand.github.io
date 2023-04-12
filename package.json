@@ -1,0 +1,21 @@
+{
+  "name": "sparkhand.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build": "npm run sass:build & npm run 11ty:build",
+    "start": "npm run 11ty:serve & npm run sass:watch",
+    "11ty:serve": "npx @11ty/eleventy --serve",
+    "11ty:build": "npx @11ty/eleventy",
+    "sass:watch": "node-sass --watch --output-style compressed src/assets/_scss/style.scss src/assets/css/style.min.css",
+    "sass:build": "node-sass --output-style compressed src/assets/_scss/style.scss src/assets/css/style.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "node-sass": "^8.0.0"
+  }
+}
