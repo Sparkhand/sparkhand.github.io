@@ -1,2 +1,204 @@
 @import './reset';
-@import './base';
+@import './variables';
+
+body { 
+    background-color: $background; 
+
+    .t-acc1 {
+        color: $accent-1;
+    }
+
+    .t-acc2 {
+        color: $accent-2;
+    }
+
+    .t-inter {
+        color: $inter-blue;
+    }
+
+    .t-b {
+        font-weight: 600;
+    }
+
+    .t-i {
+        font-style: italic;
+    }
+
+    .spacer {
+        margin: 1.5rem 0;
+    }
+
+    .separator {
+        border-bottom: 2px solid $main;
+        opacity: .5;
+        margin: 1.5rem 0;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.main-container {
+    color: $main;
+    padding: 0 1.5rem;
+    font-family: $font-paragraphs;
+
+    h1 {
+        font-family: $font-titles;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .pres-container {
+        .p-icon {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: .7rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+        }
+    }
+
+    h2 {
+        font-family: $font-titles;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .project-card {
+        display: block;
+        border: 1.5px solid $accent-1;
+        border-radius: .5rem;
+        padding: 1rem;
+        text-decoration: none;
+        font-family: $font-project;
+        margin: 1rem 0;
+
+        .project-icon {
+            margin-right: .5rem;
+        }
+
+        .project-title-container {
+            display: flex;
+            align-items: baseline;
+
+            .project-title {
+                color: $gh-title;
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+
+        .project-description {
+            font-size: .8rem;
+            margin: .6rem 0;
+        }
+
+        .project-language-container {
+            display: flex;
+            font-size: .8rem;
+
+            .language-icon {
+                margin-right: .5rem;
+            }
+
+            .python {
+                color: #3572a5;
+            }
+
+            .javascript {
+                color: #f1e05a;
+            }
+
+            .liquid {
+                color: #61dafb;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icons {
+            a {
+                font-size: 1.3rem;
+
+                &:not(:last-child) {
+                    margin-right: .5rem;
+                }
+            }
+        }
+
+        p {
+            font-size: .9rem;
+        }
+    }
+
+}
+
+@media (min-width: $screen-md-min) {
+    .main-container {
+        padding: 0 25rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .pres-container {
+            .p-icon {
+                display: block;
+                font-size: 1.7rem;
+                margin-bottom: .7rem;
+            }
+    
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+
+            .project-card {
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 1rem 1rem 0;
+
+                .project-description {
+                    justify-self: normal;
+                }
+            }
+        }
+
+        .footer {
+            padding: 0;
+
+            .icons {
+                a {
+                    font-size: 1.7rem;
+    
+                    &:not(:last-child) {
+                        margin-right: .7rem;
+                    }
+                }
+            }
+    
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
