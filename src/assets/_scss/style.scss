@@ -44,6 +44,13 @@ body {
     padding: 0 1.5rem;
     font-family: $font-paragraphs;
 
+    .language-switcher {
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    }
+
     h1 {
         font-family: $font-titles;
         font-size: 2.1rem;
