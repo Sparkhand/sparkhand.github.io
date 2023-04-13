@@ -1,27 +1,18 @@
 // COLORS //
 $background: #001011;
-$main: #F9F9F9;
-$accent-1: #EFCA08;
+$main: #f9f9f9;
+$accent-1: #efca08;
 $accent-2: #5198ea;
 $inter-blue: $accent-2;
 $gh-black: #0d1117;
 $gh-text: #8b939d;
 $gh-title: $accent-2;
 
-
 // TYPOGRAPHY //
-/*
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
-$font-titles: 'Playfair Display', serif;
-$font-paragraphs: 'Source Sans Pro', sans-serif;
-$font-project: 'Fira Mono', monospace;
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500;700&display=swap');
-$font-titles: 'Albert Sans', sans-serif;
-$font-paragraphs: 'Barlow', sans-serif;
-$font-project: 'Roboto Mono', monospace;
-
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500;700&display=swap");
+$font-titles: "Albert Sans", sans-serif;
+$font-paragraphs: "Barlow", sans-serif;
+$font-project: "Roboto Mono", monospace;
 
 // BREAKPOINTS //
 $screen-sm-min: 768px;
@@ -39,4 +30,3 @@ $screen-md-max: ($screen-lg-min - 1);
 @media (max-width: $screen-md-max) { ... }
 @media (min-width: $screen-lg-min) { ... }
 */
-
