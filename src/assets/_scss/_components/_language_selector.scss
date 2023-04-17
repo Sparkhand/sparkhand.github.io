@@ -1,0 +1,23 @@
+.language-selector {
+    width: fit-content;
+    select {
+      padding: 10px;
+      border: 2px solid $accent-1;
+      border-radius: .3rem;
+      appearance: none;
+      color: $main;
+      cursor: pointer;
+
+      &:focus { 
+        outline: none;
+      }
+
+      option {
+        background-color: $background;
+        color: $main;
+      }
+    }
+
+    font-family: $font-paragraphs;
+    font-weight: 600;
+  }

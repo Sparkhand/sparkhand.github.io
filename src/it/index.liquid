@@ -5,92 +5,81 @@ lang: it
 permalink: /it/
 ---
 
-<div class="main-container">
-  <div class="spacer"></div>
+<div class="spacer"></div>
 
-  <div class="language-selector">
-    <select id="languageSelect">
-      <option value="{{ page.slug }}/it/" selected>Italiano 🇮🇹</option>
-      <option value="{{ page.slug }}/">English 🇬🇧</option>
-    </select>
-  </div>
+<h1>Hey ciao, sono
+  <span class="t-acc1">Davide</span>
+</h1>
 
-  <div class="spacer"></div>
+<div class="spacer"></div>
 
-  <h1>Hey ciao, sono
-    <span class="t-acc1">Davide</span>
-  </h1>
-
-  <div class="spacer"></div>
-
-  <div class="pres-container">
-    <p>Sono uno studente di
-      <span class="t-acc1 t-b">Informatica</span>
-      di 21 anni presso
-      l'<a href="https://www.unipr.it" class="t-b t-acc2">Università di Parma</a>
-      (Italia).
-    </p>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="pres-container">
-    <p>Quando non sto
-      <span class="t-b">studiando o scrivendo codice,</span>
-      mi piace esplorare il mio lato
-      <span class="t-b t-acc1">creativo</span>
-      dandomi a hobby come
-      <span class="t-b">
-        <a href="https://www.instagram.com/davidetarpini_ph/" class="t-acc2">la fotografia</a>, il cinema,
-        il gaming, suonare la batteria, e fare il tifo per i miei amati
-        <a href="https://www.inter.it/" class="t-inter">nerazzurri.</a>
-      </span>
-    </p>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="pres-container">
-    <p>
-      Sono anche un volontario presso
-      <span class="t-b">
-        <span class="t-acc1">TEDx</span>Mantova</span>,
-      dove sono parte del Digital Team. Sono responsabile del
-      <a href="https://www.tedxmantova.com" class="t-acc2 t-b">sito web.</a>
-    </div>
-
-    <div class="spacer"></div>
-
-    <div class="pres-container">
-      <p>Mi piace
-        <span class="t-b t-acc1">lavorare in squadra</span>
-        e sono sempre pronto a dare una mano.
-      </p>
-    </div>
-
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
-    <h2>Dai un'occhiata ai miei
-      <span class="t-acc1">progetti</span>
-    </h2>
-    <div class="spacer"></div>
-
-    <div class="projects-container">
-      {% render "project_card.liquid", link: "https://github.com/Sparkhand/gh-scraper", title: "gh-scraper", description: "A Python command line tool to fetch and download files matching a specific programming language and extension from (almost) every GitHub repository", language: "Python", language_tag: "python" %}
-
-      {% render "project_card.liquid", link: "https://github.com/Sparkhand/sushiorderapp", title: "sushiorderapp", description: "A handy tool to summarize orders for all you can eat restaurants. Given a list of IDs it returns each ID along with its quantity.", language: "JavaScript", language_tag: "javascript" %}
-
-      {% render "project_card.liquid", link: "https://github.com/Sparkhand/11ty-min-starter", title: "11ty-min-starter", description: "A minimal Eleventy (11ty) SSG starter project featuring SASS support", language: "Liquid", language_tag: "liquid" %}
-    </div>
-
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
-    <div class="separator"></div>
-
-    {% render "footer.liquid" %}
-  </div>
-
-  <div class="spacer"></div>
+<div class="pres-container">
+  <p>Sono uno studente di
+    <span class="t-acc1 t-b">Informatica</span>
+    di 21 anni presso
+    l'<a href="https://www.unipr.it" class="t-b t-acc2">Università di Parma</a>
+    (Italia).
+  </p>
 </div>
+
+<div class="spacer"></div>
+
+<div class="pres-container">
+  <p>Quando non sto
+    <span class="t-b">studiando o scrivendo codice,</span>
+    mi piace esplorare il mio lato
+    <span class="t-b t-acc1">creativo</span>
+    dandomi a hobby come
+    <span class="t-b">
+      <a href="https://www.instagram.com/davidetarpini_ph/" class="t-acc2">la fotografia</a>, il cinema,
+      il gaming, suonare la batteria, e fare il tifo per i miei amati
+      <a href="https://www.inter.it/" class="t-inter">nerazzurri.</a>
+    </span>
+  </p>
+</div>
+
+<div class="spacer"></div>
+
+<div class="pres-container">
+  <p>
+    Sono anche un volontario presso
+    <span class="t-b">
+      <span class="t-acc1">TEDx</span>Mantova</span>,
+    dove sono parte del Digital Team. Sono responsabile del
+    <a href="https://www.tedxmantova.com" class="t-acc2 t-b">sito web.</a>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="pres-container">
+    <p>Mi piace
+      <span class="t-b t-acc1">lavorare in squadra</span>
+      e sono sempre pronto a dare una mano.
+    </p>
+  </div>
+
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+
+  <h2>Dai un'occhiata ai miei
+    <span class="t-acc1">progetti</span>
+  </h2>
+  <div class="spacer"></div>
+
+  <div class="projects-container">
+    {% render "project_card.liquid", link: "https://github.com/Sparkhand/gh-scraper", title: "gh-scraper", description: "A Python command line tool to fetch and download files matching a specific programming language and extension from (almost) every GitHub repository", language: "Python", language_tag: "python" %}
+
+    {% render "project_card.liquid", link: "https://github.com/Sparkhand/sushiorderapp", title: "sushiorderapp", description: "A handy tool to summarize orders for all you can eat restaurants. Given a list of IDs it returns each ID along with its quantity.", language: "JavaScript", language_tag: "javascript" %}
+
+    {% render "project_card.liquid", link: "https://github.com/Sparkhand/11ty-min-starter", title: "11ty-min-starter", description: "A minimal Eleventy (11ty) SSG starter project featuring SASS support", language: "Liquid", language_tag: "liquid" %}
+  </div>
+
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+
+  <div class="separator"></div>
+
+  {% render "footer.liquid" %}
+</div>
+
+<div class="spacer"></div>

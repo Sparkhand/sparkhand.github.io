@@ -1,5 +1,6 @@
 @import "./reset";
 @import "./variables";
+@import "./_components/language_selector";
 
 body {
   background-color: $background;
@@ -51,28 +52,6 @@ body {
   color: $main;
   padding: 0 1.5rem;
   font-family: $font-paragraphs;
-
-  .language-selector {
-    max-width: fit-content;
-    select {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid $accent-1;
-      border-radius: .3rem;
-      appearance: none;
-      color: $main;
-      cursor: pointer;
-
-      &:focus { 
-        outline: none;
-      }
-
-      option {
-        background-color: $background;
-        color: $main;
-      }
-    }
-  }
 
   h1 {
     font-family: $font-titles;
@@ -155,9 +134,17 @@ body {
     align-items: center;
 
     .icons {
+
       a {
+        display: inline-block;
         font-size: 1.3rem;
         text-decoration: none;
+
+        transition: all .3s ease;
+
+        &:hover {
+          color: $accent-1;
+        }
 
         &:not(:last-child) {
           margin-right: 0.5rem;
@@ -167,6 +154,12 @@ body {
 
     p {
       font-size: 0.9rem;
+
+      transition: all .3s ease;
+
+      &:hover {
+        color: $accent-1;
+      }
     }
   }
 }
