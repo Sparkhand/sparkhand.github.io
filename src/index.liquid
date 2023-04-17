@@ -77,43 +77,11 @@ permalink: /
     <div class="spacer"></div>
 
     <div class="projects-container">
-      <a href="https://github.com/Sparkhand/gh-scraper" class="project-card">
-        <div class="project-title-container">
-          <i class="project-icon bi bi-journal-bookmark-fill"></i>
-          <h3 class="project-title">gh-scraper</h3>
-        </div>
-        <p class="project-description">A Python command line tool to fetch and download files matching a specific
-          programming language and extension from (almost) every GitHub repository</p>
-        <div class="project-language-container">
-          <i class="language-icon python bi bi-circle-fill"></i>
-          <p class="project-language">Python</p>
-        </div>
-      </a>
+      {% render "project_card.liquid", link: "https://github.com/Sparkhand/gh-scraper", title: "gh-scraper", description: "A Python command line tool to fetch and download files matching a specific programming language and extension from (almost) every GitHub repository", language: "Python", language_tag: "python" %}
 
-      <a href="https://github.com/Sparkhand/sushiorderapp" class="project-card">
-        <div class="project-title-container">
-          <i class="project-icon bi bi-journal-bookmark-fill"></i>
-          <h3 class="project-title">sushiorderapp</h3>
-        </div>
-        <p class="project-description">A handy tool to summarize orders for all you can eat restaurants. Given a list of
-          IDs it returns each ID along with its quantity.</p>
-        <div class="project-language-container">
-          <i class="language-icon javascript bi bi-circle-fill"></i>
-          <p class="project-language">JavaScript</p>
-        </div>
-      </a>
+      {% render "project_card.liquid", link: "https://github.com/Sparkhand/sushiorderapp", title: "sushiorderapp", description: "A handy tool to summarize orders for all you can eat restaurants. Given a list of IDs it returns each ID along with its quantity.", language: "JavaScript", language_tag: "javascript" %}
 
-      <a href="https://github.com/Sparkhand/11ty-min-starter" class="project-card">
-        <div class="project-title-container">
-          <i class="project-icon bi bi-journal-bookmark-fill"></i>
-          <h3 class="project-title">11ty-min-starter</h3>
-        </div>
-        <p class="project-description">A minimal Eleventy (11ty) SSG starter project featuring SASS support</p>
-        <div class="project-language-container">
-          <i class="language-icon liquid bi bi-circle-fill"></i>
-          <p class="project-language">Liquid</p>
-        </div>
-      </a>
+      {% render "project_card.liquid", link: "https://github.com/Sparkhand/11ty-min-starter", title: "11ty-min-starter", description: "A minimal Eleventy (11ty) SSG starter project featuring SASS support", language: "Liquid", language_tag: "liquid" %}
     </div>
 
     <div class="spacer"></div>
@@ -121,17 +89,7 @@ permalink: /
 
     <div class="separator"></div>
 
-    <div class="footer">
-      <div class="icons">
-        <a href="https://github.com/Sparkhand">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/davidetarpini/">
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </div>
-      <p>davidetarpini[at]gmail[dot]com</p>
-    </div>
+    {% render "footer.liquid" %}
   </div>
 
   <div class="spacer"></div>

@@ -13,7 +13,14 @@
     <meta name="author" content="Davide Tarpini">
     <meta name="robots" content="index, follow">
   </head>
-    <body>
+    <body style="background-color: white;">
+        <div class="language-selector">
+            <select id="languageSelect">
+              <option value="/it/blog/{{ page.fileSlug }}" {% if lang=="it" %} selected {% endif %}>Italiano 🇮🇹</option>
+              <option value="/blog/{{ page.fileSlug }}" {% if lang=="en" %} selected {% endif %}>English 🇬🇧</option>
+            </select>
+          </div>
+      <h1>This is a blogpost</h1>
       {{ content }}
     </body>
   </head>
